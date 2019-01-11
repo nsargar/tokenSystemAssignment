@@ -1,0 +1,13 @@
+<h1>{{welcome}}</h1>
+<table class="table">
+  <tr>
+    <th>#</th>
+    <th>Counter</th>
+    <th>Token </th>
+  </tr>
+  <tr *ngFor="let token of tokenList; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{token.window}}</td>
+    <td>{{token.tokenId}}</td>
+  </tr>
+</table>
